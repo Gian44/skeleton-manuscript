@@ -1,0 +1,96 @@
+\documentclass[sigconf]{acmart}
+
+% Packages (optional)
+\usepackage{enumitem} % For customized list formatting
+\usepackage{titlesec} % For section and subsection formatting
+\usepackage{needspace}
+\usepackage{times}
+
+% Disable ACM reference format and headers
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\pagestyle{plain}
+\acmConference{}{}{}
+
+% Metadata for the paper
+\title{ChronoSwarm: A Multi-Swarm Particle Swarm Optimization Solution for the University Course Timetabling Problem}
+\author{Gian Myrl D. Renomeron}
+\affiliation{
+  \institution{CMSC 199.2: Research in Computer Science II}
+  \department{University of the Philippines Tacloban College}
+  \city{Tacloban City}
+  \state{Leyte}
+  \country{Philippines}}
+\email{gdrenomeron@up.edu.ph}
+
+\date{January 23, 2025}
+
+% Customize section and subsection numbering style
+\titleformat{\section}[block]{\bfseries\Large}{\Roman{section}.}{1em}{}
+\titleformat{\subsection}[block]{\bfseries\large}{\hspace{0.5cm}\Alph{subsection}.}{1em}{}
+\titleformat{\subsubsection}[block]{\bfseries\normalsize}{\hspace{1cm}\roman{subsubsection}.}{1em}{}
+
+% Add spacing before and after sections
+\titlespacing{\section}{0pt}{2ex plus 1ex minus 1ex}{1.5ex plus 0.5ex}
+\titlespacing{\subsection}{0pt}{1.5ex plus 0.5ex minus 0.5ex}{1ex plus 0.3ex}
+\titlespacing{\subsubsection}{0pt}{1ex plus 0.3ex minus 0.3ex}{0.8ex plus 0.2ex}
+
+% Customize list indentation
+\setlist[enumerate,1]{label=\Roman*., leftmargin=1.5cm}
+\setlist[enumerate,2]{label=\Alph*., leftmargin=1.5cm}
+\setlist[enumerate,3]{label=\roman*., leftmargin=1.5cm}
+\setlist[itemize]{leftmargin=4em}
+\raggedbottom
+
+% Start of Document
+\begin{document}
+
+\maketitle
+
+\clearpage
+\section{Introduction}
+    \subsection{Background of the Study}
+        \subsubsection{University Course Timetabling Problem (UCTP)}
+        \subsubsection{Swarm Intelligence}
+            \begin{enumerate}
+                \item Particle Swarm Optimization (PSO)
+                \item Multi-Swarm PSO (MSPSO)
+            \end{enumerate}
+
+\section{Related Works}
+    \subsection{Non Swarm Approach}       
+    \subsection{Single Swarm Approach}
+    \subsection{Multi Swarm Approach}
+
+
+\section{Statement of the Problem}
+
+\section{Objectives of the Study}
+    \subsection{General Objective}
+    \subsection{Specific Objectives}
+
+\section{Scope and Limitations}
+
+\section{Significance of the Study}
+
+\section{Theoretical and Conceptual Framework}
+
+\needspace{3\baselineskip}
+
+\section{Methodology}
+    \subsection{Data}
+    \subsection{Data Processing}
+    \subsection{MSPSO For UCTP}
+        \subsubsection{Initialization Phase}
+        \subsubsection{Optimization Phase}
+    \subsection{Evaluation Details of the MSPSO Solver}
+    \subsection{Deployment Details}
+
+\section{Results}
+\subsection{Preliminary Findings}
+
+\section{Schedule of Activities}
+    \subsection{2024}
+    \subsection{2025}
+
+\end{document}
